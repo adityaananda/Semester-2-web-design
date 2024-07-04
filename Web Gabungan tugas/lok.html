@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran.adit</title>
+    <link rel="stylesheet" href="Css.css" />
+    <style>
+      header {
+        background-color: #333; /* Warna latar belakang */
+        color: #fff; /* Warna teks */
+        padding: 20px; /* Ruang internal */
+        text-align: center; /* Teks di tengah */
+      }
+
+      /* CSS untuk judul */
+      .judul {
+        font-size: 24px; /* Ukuran font */
+        margin: 0; /* Hilangkan margin bawaan */
+      }
+
+      /* CSS untuk deskripsi */
+      .deskripsi {
+        font-size: 16px; /* Ukuran font */
+        margin: 5px 0; /* Atur margin atas dan bawah */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="judul">Formulir Pendaftaran</h1>
+    <h2 class="deskripsi">Data Diri</h2>
+    <table>
+      <tr>
+        <td>NIK</td>
+        <td>Nama Lengkap</td>
+      </tr>
+      <tr>
+        <td><input type="text" /></td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Tempat/Tanggal Lahir</td>
+      </tr>
+      <tr>
+        <td><input type="text" /></td>
+        <td><input type="date" /></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+      </tr>
+      <tr>
+        <td><input type="radio" />Laki-Laki</td>
+        <td><input type="radio" />Perempuan</td>
+      </tr>
+      <tr>
+        <td>Status</td>
+      </tr>
+      <tr>
+        <td><input type="radio" />Menikah</td>
+        <td><input type="radio" />Belum Menikah</td>
+      </tr>
+      <tr>
+        <td>Agama</td>
+      </tr>
+      <tr>
+        <td><input type="radio" />Islam</td>
+        <td><input type="radio" />Katolik</td>
+        <td><input type="radio" />Budha</td>
+        <td><input type="radio" />Protestan</td>
+        <td><input type="radio" />Hindu</td>
+      </tr>
+      <tr>
+        <td>Alat Transportasi</td>
+      </tr>
+      <tr>
+        <td>
+          <select name="Alat Transportasi" id="">
+            <option value="1">Jalan kaki</option>
+            <option value="3">Angkutan umum/bus/pete-pete</option>
+            <option value="4">Mobil/bus antar jemput</option>
+            <option value="5">Kereta api</option>
+            <option value="6">Ojek</option>
+            <option value="7">Andong/bendi/sado/dokar/delman/becak</option>
+            <option value="8">Perahu penyeberangan/rakit/getek</option>
+            <option value="11">Kuda</option>
+            <option value="12">Sepeda</option>
+            <option value="13">Sep</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

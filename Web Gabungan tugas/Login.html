@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="Css.css">
+    <style>
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* Font yang lebih modern */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+input[type="radio"],
+input[type="checkbox"] {
+  background-color: #fff;
+  border: 2px solid #ddd; /* Border yang lebih tebal */
+  color: #333;
+  padding: 12px; /* Padding yang lebih besar */
+  margin: 10px 0;
+  border-radius: 8px; /* Border radius yang lebih besar */
+  width: 95%;
+  transition: border-color 0.3s; /* Transisi untuk border */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #4CAF50; /* Mengubah warna border saat fokus */
+  outline: none; /* Menghilangkan outline default */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: none;
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s; /* Transisi untuk background */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Warna hover yang lebih gelap */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Menambahkan shadow saat hover */
+}
+
+/* Menambahkan responsivitas */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 90%; /* Menyesuaikan lebar input pada layar yang lebih kecil */
+  }
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran.adit</title>
+</head>
+<body>
+    <h1>
+        Formulir Pendaftaran
+    </h1>
+    <br>
+    <h2>Data Diri</h2>
+    <table>
+        <tr>
+            <td>
+                NIK
+            </td>
+            <td>
+                Nama Lengkap
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Tempat/Tanggal Lahir</td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+        </tr>
+        <tr>
+            <td><input type="radio">Laki-Laki</td></tr>
+            <td><input type="radio">Perempuan</td></tr>
+        <tr>
+            <td>Status</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio"/>Menikah
+            </td>
+            <td><input type="radio">Belum Menikah</td>
+        </tr>
+        <tr>
+            <td>Agama</td>
+        </tr>
+        <tr>
+            <td><input type="radio">Islam</td>
+            <td><input type="radio">Katolik</td>
+            <td><input type="radio">Budha</td>
+            <td><input type="radio">Protestan</td>
+            <td><input type="radio">Hindu</td>
+        </tr>
+        <tr>
+            <td>Alat Transportasi</td>
+        </tr>
+        <tr><td>
+           <select name="Alat Transportasi" id="">
+            <option value="1"  >Jalan kaki</option>
+            <option value="3"  >Angkutan umum/bus/pete-pete</option>
+            <option value="4"  >Mobil/bus antar jemput</option>
+            <option value="5"  >Kereta api</option>
+            <option value="6"  >Ojek</option>
+            <option value="7"  >Andong/bendi/sado/dokar/delman/becak</option>
+            <option value="8"  >Perahu penyeberangan/rakit/getek</option>
+            <option value="11"  >Kuda</option>
+            <option value="12"  >Sepeda</option>
+            <option value="13"  >Sepeda motor</option>
+            <option value="14"  >Mobil pribadi</option>
+            <option value="99"  >Lainnya</option>
+           </select>
+        </td></tr>
+        <tr><td>Jenis  Tinggal</td></tr>
+        <tr>
+            <td>
+                <select name="Jenis_tinggal" id="">
+                <option value="1"  >Bersama orang tua</option>
+                <option value="2"  >Wali</option>
+                <option value="3"  >Kost</option>
+                <option value="4"  >Asrama</option>
+                <option value="5"  >Panti asuhan</option>
+                <option value="99"  >Lainnya</option>
+                </select>
+            </td>
+        </tr>
+        <tr><td>Penerima KPS</td></tr>
+        <tr>
+            <td>
+                <select name="Penerima_kps" id="">
+                <option value="YA"  >Ya</option>
+                <option value="Tidak"  >Tidak</option> 
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Kewarganegaraan</td>
+        </tr>
+        <tr><td>
+            <select name="kewarganegaraan" id="">
+                <option value="WNI"  >WNI</option>
+                <option value="WNA"  >WNA</option>
+            </select>
+        </td></tr>
+        <tr><td>Alamat Lengkap(sesuai KTP)</td></tr>
+        <tr>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>RT/RW</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text"  name="rt" placeholder="RT" class="form-control" id="">
+                <input type="text"  name="rw" placeholder="RW" class="form-control" id="">
+            </td>
+            <tr>
+                <td>Kode Pos</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number"  name="kode_pos" id="">
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <td>Dusun</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text"  name="dusun" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>NPWP</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text"  name="npwp" id="" > 
+            </td>
+        </tr>
+        <tr><td>Jalan</td></tr>
+        <tr>
+            <td>
+                <input type="text" name="Jalan" id="" >
+            </td>
+        </tr>
+        <tr><td>Kel/Desa</td></tr>
+        <tr>
+            <td>
+                <input type="text" name="Keldes" id="" >
+            </td> 
+        </tr>
+        <tr><td>Kecamatan</td></tr>
+        <tr>
+            <td>
+                <input type="text" name="Kecamatan" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>Telp/HP</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="Telp/hp"  id="">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+        </tr>
+        <tr>
+            <TD>
+                <input type="email" name="email" id="">
+            </TD>
+        </tr>
+        <tr>
+            <td>Asal Sekolah</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="Asal Sekolah"  id="">
+            </td>
+        </tr>
+        <tr>
+            <td>NISN</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="NISN" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>Jurusan</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="Jurusan" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="alamat" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>Prodi</td>
+        </tr>
+        <tr>
+            <td><input type="radio">Teknik Informatika (S1)</td>
+            <td><input type="radio">Sistem Informasi (S1)</td>
+            <td><input type="radio">Manajemen Informatika (D3)</td>
+            <td><input type="radio">Komputerisasi Akuntansi (D3)</td>
+        </tr>
+        <tr>
+            <td>Waktu Belajar</td>
+        </tr>
+        <tr>
+            <td><input type="radio"  name="waktu_belajar" id="Pagi">Pagi</td>
+            <td><input type="radio"  name="waktu_belajar" id="Sore">Sore</td>
+        </tr>
+        <tr>
+            <td>Pilihan Kelas</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="pilihan_kelas" id="">Reguler</td>
+            <td><input type="radio" name="pilihan_kelas" id="">KIP Kuliah</td>
+            <td><input type="radio" name="pilihan_kelas" id="">Karyawan</td>
+        </tr>
+    
+        <tr><td>
+        <h1 style="background-color: aqua;">Data Orang Tua
+        <input type="RADIO"></h1>
+        <h1 style="background-color: aqua;">Data Wali
+            <input type="radio"></h1>
+        </td></tr>
+
+        <tr>
+            <td>Sumber Informasi Mengenai STMIK Kaputama</td>
+        </tr>
+        <tr>
+            <td><input type="radio">Brosur/Spanduk/Poster</td>
+            <td><input type="radio">Teman/Saudara</td>
+            <td><input type="radio">Media Sosial</td>
+            <td><input type="text">Lainnya</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="check_benar" name="check_benar" value="data benar" class="form-check-input">
+                <label class="form-check-label" style="font-weight: normal !important;" for="check_benar">Saya telah memastikan data yang saya isi sudah benar.</label>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" style="color: brown; margin-top: 50px; background-color: aqua; stroke: black;"></td>
+        </tr>
+    </table>
+</body>
+</html>

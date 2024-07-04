@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .calculator {
+        width: 400px; /* Lebar kalkulator */
+        padding: 20px; /* Padding di dalam kalkulator */
+        margin: auto; /* Pusatkan kalkulator */
+        border: solid 1px #000; /* Border kalkulator */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow untuk kalkulator */
+        border-radius: 5px; /* Border radius */
+        text-align: center; /* Teks rata tengah */
+      }
+
+      input[type="text"],
+      button {
+        width: 90%; /* Lebar input dan button menyesuaikan dengan padding kalkulator */
+        padding: 10px; /* Padding untuk input dan button */
+        margin-bottom: 10px; /* Margin bawah untuk input */
+        font-size: 16px; /* Ukuran font */
+      }
+
+      button {
+        width: 45%; /* Lebar button */
+        padding: 15px; /* Padding button */
+        margin: 5px 2.5%; /* Margin untuk button, memberi jarak antar button */
+      }
+
+      #result {
+        width: 90%; /* Lebar hasil menyesuaikan dengan padding kalkulator */
+        height: 40px; /* Tinggi hasil */
+        border-radius: 5px; /* Border radius untuk hasil */
+        font-size: 20px; /* Ukuran font hasil */
+        margin-top: 10px; /* Margin atas untuk hasil */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Kalkulator</h1>
+
+      <input type="text" id="number1" placeholder="masukkan angka 1" /><br />
+      <input type="text" id="number2" placeholder="masukkan angka 2" /><br />
+
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('-')">-</button>
+      <button onclick="calculate('/')">/</button>
+      <button onclick="calculate('x')">x</button>
+
+      <div id="result">Hasil</div>
+
+      <script>
+        function calculate(operation) {
+          var num1 = parseFloat(document.getElementById("number1").value);
+          var num2 = parseFloat(document.getElementById("number2").value);
+          var result;
+
+          switch (operation) {
+            case "+":
+              result = num1 + num2;
+              break;
+            case "-":
+              result = num1 - num2;
+              break;
+            case "/":
+              result = num1 / num2;
+              break;
+            case "x":
+              result = num1 * num2;
+              break;
+            default:
+              result = "NaN";
+          }
+
+          document.getElementById("result").innerText = result;
+        }
+      </script>
+    </div>
+  </body>
+</html>

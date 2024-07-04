@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="/submit-form" method="post">
+      <h2>Formulir Reservasi Hotel ADIT</h2>
+      <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+          <td>
+            <label for="nama">Nama Pemesan:</label><br />
+            <input
+              type="text"
+              id="gelar"
+              name="gelar"
+              placeholder="Gelar"
+            /><br />
+          </td>
+          <td>
+            <input
+              type="text"
+              id="nama_depan"
+              name="nama_depan"
+              placeholder="Nama Depan"
+            /><br />
+          </td>
+          <td>
+            <input
+              type="text"
+              id="nama_belakang"
+              name="nama_belakang"
+              placeholder="Nama Belakang"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="whatsapp">No. Whatsapp:</label><br />
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="0000-0000-0000"
+            /><br />
+          </td>
+          <td>
+            <label for="email">E-mail:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@domain.com"
+            /><br />
+          </td>
+          <td>
+            <label for="jumlah_tamu">Jumlah Tamu:</label><br />
+            <input
+              type="number"
+              id="jumlah_tamu"
+              name="jumlah_tamu"
+              min="1"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tanggal_kedatangan">Tanggal Kedatangan:</label><br />
+            <input
+              type="date"
+              id="tanggal_kedatangan"
+              name="tanggal_kedatangan"
+            /><br />
+          </td>
+          <td>
+            <label for="waktu_kedatangan">Waktu Kedatangan:</label><br />
+            <input
+              type="time"
+              id="waktu_kedatangan"
+              name="waktu_kedatangan"
+            /><br />
+          </td>
+          <td>
+            <label for="tipe_kamar">Tipe Kamar:</label><br />
+            <select id="tipe_kamar" name="tipe_kamar">
+              <option value="">Pilih tipe kamar</option>
+              <option value="single">Single</option>
+              <option value="double">Double</option>
+              <option value="suite">Suite</option></select
+            ><br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="layanan_penjemputan"
+              >Apakah akan menggunakan layanan penjemputan? (Gratis):</label
+            ><br />
+            <input type="radio" id="ya" name="layanan_penjemputan" value="ya" />
+            <label for="ya">Ya, Tolong jemput saya pada saat kedatangan</label
+            ><br />
+            <input
+              type="radio"
+              id="tidak"
+              name="layanan_penjemputan"
+              value="tidak"
+            />
+            <label for="tidak">Tidak, Terimakasih</label><br />
+          </td>
+          <td colspan="3">
+            <label for="nomor_penerbangan">Nomor Penerbangan:</label><br />
+            <input
+              type="text"
+              id="nomor_penerbangan"
+              name="nomor_penerbangan"
+              placeholder="Nomor Penerbangan"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label for="permintaan_khusus">Permintaan Khusus:</label><br />
+            <textarea id="permintaan_khusus" name="permintaan_khusus"></textarea
+            ><br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Kirim" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
